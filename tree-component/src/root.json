@@ -1,0 +1,63 @@
+{
+  "children": [
+    {
+      "name": "Documents",
+      "children": [
+        {
+          "name": "Work",
+          "children": [
+            {
+              "name": "Report.docx"
+            },
+            {
+              "name": "Presentation.pptx"
+            }
+          ]
+        },
+        {
+          "name": "Personal",
+          "children": [
+            {
+              "name": "VacationPhotos",
+              "children": [
+                {
+                  "name": "Beach.jpg"
+                },
+                {
+                  "name": "Mountains.jpg"
+                }
+              ]
+            },
+            {
+              "name": "Journal.txt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Downloads",
+      "children": [
+        {
+          "name": "Software",
+          "children": [
+            {
+              "name": "Installer.exe"
+            },
+            {
+              "name": "Setup.msi"
+            }
+          ]
+        },
+        {
+          "name": "Documents",
+          "children": [
+            {
+              "name": "Manual.pdf"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
