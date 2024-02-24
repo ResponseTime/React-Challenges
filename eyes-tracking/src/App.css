@@ -1,0 +1,36 @@
+.eye-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.eye1{
+  margin: 0px 10px;
+  width: 1%;
+  padding: 150px;
+  border-radius: 50%;
+  background-color: red;
+}   
+
+.eye2{
+  width: 1%;
+  margin: 0px 10px;
+  padding: 150px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.eye-ball{
+  padding: 10px 10px;
+  position: relative;
+  border-radius: 50%;
+  background-color: black;
+}
+.eye-ball1{
+  position: relative;
+  padding: 10px 10px;
+  border-radius: 50%;
+  background-color: black;
+}
