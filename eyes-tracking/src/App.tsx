@@ -4,15 +4,15 @@ function App() {
 
 const [rotation, setrotation] = useState("")
 const [rotation1, setrotation1] = useState("")
-const dir1 = useRef(null)  
-const dir2 = useRef(null)
+const dir1: null|any = useRef(null)  
+const dir2: null|any= useRef(null)
   
   useEffect(()=>{
     window.addEventListener("mousemove",(e)=>{
-      let x = (e.pageX - dir1.current.getBoundingClientRect().left)/30+"px";
-      let y = (e.pageY - dir1.current.getBoundingClientRect().top)/30+"px";
-      let x1 = (e.pageX - dir2.current.getBoundingClientRect().left)/30+"px";
-      let y1 = (e.pageY - dir2.current.getBoundingClientRect().top)/30+"px";
+      let x = (e.pageX - dir1.current.getBoundingClientRect().left)/20+"px";
+      let y = (e.pageY - dir1.current.getBoundingClientRect().top)/20+"px";
+      let x1 = (e.pageX - dir2.current.getBoundingClientRect().left)/20+"px";
+      let y1 = (e.pageY - dir2.current.getBoundingClientRect().top)/20+"px";
       setrotation(`translate3d(${x},${y},0px)`)
       setrotation1(`translate3d(${x1},${y1},0px)`)
     })
