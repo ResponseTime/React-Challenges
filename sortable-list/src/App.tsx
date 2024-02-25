@@ -7,13 +7,13 @@ function App() {
   useEffect(() => {
     const sortArray = async () => {
       let nlist = [...list];
-      for (let i = 0; i < nlist.length; i++) {
-        for (let j = i + 1; j < nlist.length; j++) {
-          if (nlist[i] > nlist[j]) {
-            let tmp = nlist[i];
-            nlist[i] = nlist[j];
-            nlist[j] = tmp;
-            await new Promise((resolve) => setTimeout(resolve, 500));
+      for (let i = 0; i < nlist.length - 1; i++) {
+        for (let j = 0; j < nlist.length - i - 1; j++) {
+          if (nlist[j] > nlist[j + 1]) {
+            let tmp = nlist[j];
+            nlist[j] = nlist[j + 1];
+            nlist[j + 1] = tmp;
+            await new Promise((resolve) => setTimeout(resolve, 200));
             setlist([...nlist]);
           }
         }
